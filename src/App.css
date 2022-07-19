@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+ :root{
+   --position-key:12px;
+   --margin-button:5px;
+   --button-width:48px;
+ }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ .container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 5px 12px 5px;
+  background-color: rgba(60, 50, 199, 0.527);
+  width: 360px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 9px;
+
+ }
+.displaycal{
+    font-size: 17px;
+    color:rgba(19, 18, 18, 0.74);
+     padding: 20px 5px;
+     width: 300px;
+     outline: none;
+     border-radius: 9px;
+     border: none;
+     text-align: right;
+     font-size: 22px;
+     
+}
+.display{
+position: absolute;
+}
+.keyboard{ 
+     background: #00000013;
+     display: flex;
+     width: 376px;
+     padding: 9px;
+     border-radius: 9px;
+     margin-top: 42px;
+     flex-direction: column;
+     
+}
+.keygroup{
+  width: calc(160px +  var(--margin-button) * 3 );
+  padding-top: calc(68px + (var(--margin-button)));
+  
 }
 
-.App-link {
-  color: #61dafb;
+.opratorkey{
+   display: flex;
+   flex-direction: column;
+   padding-top: calc(68px + (var(--margin-button)))
+}
+.buttoncalc{
+    border:none;
+    padding: 5px;
+    width: var(--button-width);
+    height: 48px;
+    font-size: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    border-radius: 3px;
+    background: #fff;
+    margin: var(--margin-button);
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttoncalc:hover{
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+}
+.button_extraWidth{
+    width: calc((48px + var(--margin-button)) * 2 )!important;
+}
+.button-float{
+  margin-left: calc((var(--button-width)*2) + (var(--margin-button) * 5 ));
+  background-color:#39313b;
+  color:#fff
 }
