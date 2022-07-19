@@ -1,3 +1,7 @@
+# Calculadora simples feita com Javascrip e a biblioteca javascript Reactjs
+
+  Abaixo algumas instruções de como executar o projeto
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
